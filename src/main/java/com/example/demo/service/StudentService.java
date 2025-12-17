@@ -1,5 +1,5 @@
 package com.example.demo.service;
 
 public interace StudentService{
-    Student
+    Student saveStudent(Student student);
 }
