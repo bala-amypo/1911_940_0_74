@@ -15,4 +15,5 @@ public class StudentServiceImple implements StudentService {
     public Student saveStudent(Student student){
         return studentRepository.save(student);
     }
+    
 }
