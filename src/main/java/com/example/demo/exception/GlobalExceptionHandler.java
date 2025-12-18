@@ -1,8 +1,10 @@
 
 
-
+@restControllerAdvice
 public calss GlobalExceptionHandler{
     @ExceptionHandler(ResourceNotFoundException.class){
-        public String handleNotFound(ResourceNot)
+        public ResponseEntity <String> handleNotFound(ResourceNotFoundException ex){
+            return new 
+        }
     }
 }
