@@ -17,5 +17,5 @@
         }
         public Student getStudentById(Long id){
             return studentRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Student not found"));
-        }
+}
         
