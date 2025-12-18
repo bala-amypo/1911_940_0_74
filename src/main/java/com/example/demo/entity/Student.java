@@ -22,7 +22,7 @@ public class Student {
     @Email(message="Invalid email id")
     @Column(unique=true)
     private String email;
-    private Int age;
+    //private Int age;
     //@NotNull
     //@Size(min,max)(to reccomend the use to the give no of characters)
     //@Min
@@ -47,17 +47,17 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-     public float getage() {
-        return age;
+    //  public float getage() {
+    //     return age;
+    // }
+    // public void setCgpa(float age) {
+    //     this.age = age;
     }
-    public void setCgpa(float age) {
-        this.age = age;
-    }
-    public Student(Long id, String name, String email,Int age) {
+    public Student(Long id, String name, String email,) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.age = age;
+        //this.age = age;
     }
     public Student() {
     } 
