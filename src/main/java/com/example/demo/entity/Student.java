@@ -5,13 +5,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Email;
+
 @Entity
  @Table(name="StudentTable")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message=" Name field cannot be empty")
     private String name;
+    @Email(message="Invalid email id"
     private String email;
     public Long getId() {
         return id;
