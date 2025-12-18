@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
@@ -15,6 +16,7 @@ import com.example.demo.service.StudentService;
 import jakarta.validation.Valid;
 
 @RestController
+@RequestMapping("/Studentsdata")
 public class StudentController {
 
     @Autowired
@@ -29,6 +31,6 @@ public class StudentController {
     }
     @GetMapping("/getdata/{id}")
     public Student getdata(@PathVariable Long id){
-         return service.get
+         return studentService.getStudentById(id);
 }
 }
