@@ -25,7 +25,7 @@ public class Student {
     //@Min
     //@Max
     //@Pattern(reg)(used for phone numbers)
-    //@Positive(used in 
+    //@Positive(used in bank record detailling)
     public Long getId() {
         return id;
     }
@@ -44,8 +44,12 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-   
-    
+     public float getage() {
+        return age;
+    }
+    public void setCgpa(float age) {
+        this.age = age;
+    }
     public Student(Long id, String name, String email) {
         this.id = id;
         this.name = name;
