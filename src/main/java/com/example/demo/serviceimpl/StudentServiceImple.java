@@ -23,6 +23,6 @@
         Student exists=getStudentById(id);
         exists.setNmae(student.getName());
         exists.setEmail(student.getEmail());
-        return studentRepository.save(exists);
+        return studentRepository.save(exists).orElseThrow(()-> new ResourceNotFoundException("Student not found"));
 }
 }
