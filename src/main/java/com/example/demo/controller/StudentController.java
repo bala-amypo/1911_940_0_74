@@ -38,8 +38,9 @@ public class StudentController {
 public Student updatedStudent(@PathVariable Long id,@Valid @RequestBody Student student){
 return studentService.updatedata(id,student);
 }
-@DeleteMapping("/deletedata/(id)")
-public RepositoryEntity<string>deletedata(@PathVariable Long id{studentService.deletedata(id))
- return 
-}
+@DeleteMapping("/deletedata/{id}")
+public RepositoryEntity<string>deletedata(@PathVariable Long id{
+studentService.deletedata(id));
+ return ResposeEntity.id("Student DeleteedSuccessfully");
+ }
 }
