@@ -21,7 +21,7 @@
 }
         public Student updatedata(Long id,Student student){
         Student exists=getStudentById(id);
-        exists.setNmae(student.getName());
+        exists.setName(student.getName());
         exists.setEmail(student.getEmail());
         return studentRepository.save(exists).orElseThrow(()-> new ResourceNotFoundException("Student not found"));
 }
