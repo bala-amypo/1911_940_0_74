@@ -27,6 +27,7 @@
 }
 public Student deletedata(Long id){
 Student student=getStudentById(id);
-studentRepositorydelete(student)
+studentRepositorydelete(student);
+return student;
 }
 }
