@@ -23,11 +23,12 @@
         Student exists=getStudentById(id);
         exists.setName(student.getName());
         exists.setEmail(student.getEmail());
-        return studentRepository.save(exists).orElseThrow(()-> new ResourceNotFoundException("Student not found"));
+        return studentRepository.save(exists);
+        //.orElseThrow(()-> new ResourceNotFoundException("Student not found"));
 }
 public Student deletedata(Long id){
 Student student=getStudentById(id);
-studentRepositorydelete(student);
+studentRepository.delete(student);
 return student;
 }
 }
