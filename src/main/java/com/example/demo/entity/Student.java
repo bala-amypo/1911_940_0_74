@@ -11,6 +11,8 @@ import jakarta.validation.constraints.Size;
 
 @Entity
  @Table(name="StudentTable")
+ @getter
+ @setter()
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
