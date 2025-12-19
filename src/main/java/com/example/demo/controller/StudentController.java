@@ -39,7 +39,7 @@ public Student updatedStudent(@PathVariable Long id,@Valid @RequestBody Student 
 return studentService.updatedata(id,student);
 }
 @DeleteMapping("/deletedata/(id)")
-public RepositoryEntity<string>deletedata(@PathVariable Long id){
-
+public RepositoryEntity<string>deletedata(@PathVariable Long id{studentService.deletedata(id))
+ return 
 }
 }
