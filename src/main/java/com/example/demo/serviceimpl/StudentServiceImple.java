@@ -21,5 +21,8 @@
 }
         public Student updatedata(Long id,Student student){
         Student exists=getStudentById(id);
-        exits.setNmae(student
+        exists.setNmae(student.getName());
+        exists.setEmail(student.getEmail());
+        return studentRepository.save(exists);
+}
 }
