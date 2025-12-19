@@ -36,8 +36,9 @@ public class StudentController {
 @Putmapping("/updatedata/{id}")
 public Student updatedStudent(@PathVariable Long id,@Valid @RequestBody Student student){
 return studentService.updatedata(id,student);
-
+}
 @DeleteMapping("/deletedata/(id)")
 public RepositoryEntity<string>deletedata(@PathVariable Long id){
 
+}
 }
