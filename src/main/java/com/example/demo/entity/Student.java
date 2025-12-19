@@ -11,7 +11,7 @@ import jakarta.validation.constraints.Size;
 
 @Entity
  @Table(name="StudentTable")
- @getter
+ @getter()
  @setter()
 public class Student {
     @Id
