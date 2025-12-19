@@ -25,4 +25,8 @@
         exists.setEmail(student.getEmail());
         return studentRepository.save(exists).orElseThrow(()-> new ResourceNotFoundException("Student not found"));
 }
+public Student deletedata(Long id){
+Student student=getStudentById(id);
+studentRepositorydelete(student)
+}
 }
